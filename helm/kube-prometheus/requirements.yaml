@@ -6,8 +6,7 @@ dependencies:
     condition: deployAlertManager
 
   - name: prometheus
-<<<<<<< HEAD
-    version: 0.0.24
+    version: 0.0.25
     repository: file://../prometheus
     #prod-repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
 
@@ -16,11 +15,6 @@ dependencies:
     repository: file://../exporter-coredns
     #prod-repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
     condition: deployCoreDNS
-=======
-    version: 0.0.25
-    #e2e-repository: file://../prometheus
-    repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
->>>>>>> upstream/master
 
   - name: exporter-kube-controller-manager
     version: 0.1.7
@@ -35,13 +29,8 @@ dependencies:
 
   - name: exporter-kube-etcd
     version: 0.1.9
-<<<<<<< HEAD
     repository: file://../exporter-kube-etcd
     #prod-repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
-=======
-    #e2e-repository: file://../exporter-kube-etcd
-    repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
->>>>>>> upstream/master
 
   - name: exporter-kube-scheduler
     version: 0.1.6
