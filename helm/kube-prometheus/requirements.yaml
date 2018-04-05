@@ -16,6 +16,12 @@ dependencies:
     #prod-repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
     condition: deployCoreDNS
 
+  - name: exporter-coredns
+    version: 0.0.1
+    #e2e-repository: file://../exporter-coredns
+    repository: https://s3-eu-west-1.amazonaws.com/coreos-charts/stable/
+    condition: deployCoreDNS
+
   - name: exporter-kube-controller-manager
     version: 0.1.7
     repository: file://../exporter-kube-controller-manager
